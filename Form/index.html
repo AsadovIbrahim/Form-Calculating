@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karbon İzi Hesablayıcı</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Karbon İzi Hesablayıcı</h1>
+      <label for="country">Ölkə Seçin:</label>
+      <select id="country">
+        <option value="global">Global</option>
+        <option value="azerbaijan">Azərbaycan</option>
+        <option value="us">ABŞ</option>
+      </select>
+    </div>
+    <nav class="categories">
+      <div class="category" data-category="transport">Nəqliyyat</div>
+      <div class="category" data-category="energy">Enerji</div>
+      <div class="category" data-category="food">Qida</div>
+      <div class="category" data-category="shopping">Alış-Veriş</div>
+      <div class="category" data-category="plastics">Plastik İstifadəsi</div>
+      <div class="category" data-category="smoking">Siqaret</div>
+      <div class="category" data-category="air-travel">Təyyarə Səyahəti</div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="form-section" class="form-section">
+        <h3 id="form-title">Kateqoriya</h3>
+        <form id="form-content">
+          <!-- Dynamic Form Will Be Generated Here -->
+        </form>
+        <button id="calculate-button" class="btn-primary">Hesabla</button>
+        <p id="result" style="display:none; margin-top:20px;">Karbon İzi: <span id="carbon-footprint"></span> kq CO₂</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 Karbon İzi Hesablayıcı. Bütün hüquqlar qorunur.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
